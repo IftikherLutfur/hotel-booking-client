@@ -1,7 +1,17 @@
 
+import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from '../Authentication/AuthProvider';
 
 const Navbar = () => {
+
+
+    const {user, logOut} = useContext(AuthContext)
+
+    const handleLogOut = () =>{
+        logOut()
+    }
+
     return (
         <div>
             <header className="p-4 dark:bg-gray-100 dark:text-gray-800">
@@ -13,23 +23,45 @@ const Navbar = () => {
 			</svg>
 
 		</a>
-		<ul className="items-stretch hidden space-x-3 lg:flex">
+		<ul className="items-center hidden space-x-3 lg:flex">
 		<li className="flex">
-		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">Link</a></NavLink>
+		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex font-bold"><em>Home</em></a></NavLink>
 		</li>
 		<li className="flex">
-		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">Link</a></NavLink>
+		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex font-bold"><em>Home</em></a></NavLink>
 		</li>
 		<li className="flex">
-		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-violet-600 dark:border-violet-600">Link</a></NavLink>
+		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex font-bold"><em>Home</em></a></NavLink>
 		</li>
 		</ul>
+
+       {user ? <div className="dropdown dropdown-end">
+      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img  src={user.photoUR} />
+        </div>
+      </div>
+      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+        <li>
+          <a className="justify-between">
+            {user.displayName}</a></li>
+        <li><a>
+           <button onClick={handleLogOut}> Logout</button>
+            </a></li>
+      </ul>
+    </div>
+:
 		<div className="items-center flex-shrink-0 hidden lg:flex">
-			<button className="self-center px-8 py-3 rounded">Sign in</button>
+			<button className="self-center px-8 py-3 rounded">
+                <NavLink to='/login'>Sign in</NavLink>
+                </button>
 			<button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50">
                 <NavLink to='/signUp'>Sign Up</NavLink>
                 </button>
-		</div>
+		</div>}
+
+
+
 		<button className="p-4 lg:hidden">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 dark:text-gray-800">
 				<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>

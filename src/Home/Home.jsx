@@ -1,3 +1,4 @@
+import Featured from "./Featured";
 import GoogleMap from "./GoogleMap";
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
 </section>
 
 <GoogleMap></GoogleMap>
+<Featured></Featured>
         </div>
     );
 };

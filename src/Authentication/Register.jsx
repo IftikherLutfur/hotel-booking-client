@@ -3,7 +3,7 @@ import { AuthContext } from "./AuthProvider";
 
 const Register = () => {
 
-    const {createUser} = useContext(AuthContext)
+    const {createUser, updateUserProfile} = useContext(AuthContext)
 
 const handleRegister = e =>{
     e.preventDefault()
@@ -19,6 +19,7 @@ const handleRegister = e =>{
 
     createUser(email, password)
     .then(result => {
+        updateUserProfile(name, image)
         console.log(result.user);
     })
     .catch(error=>{console.error(error)})
@@ -28,9 +29,15 @@ const handleRegister = e =>{
 
     return (
         <div>
-          <div className="hero min-h-screen bg-base-200">
 
-  <div className="hero-content flex-col lg:flex-row-reverse">
+   <div className="mt-8 mb-4">
+    <h1 className="text-4xl font-bold text-black text-center">Register Now!!</h1>
+   </div>
+
+
+          <div className="grid grid-cols-2 items-center gap-0">
+
+  <div className="hero-content flex-col">
 
     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form onSubmit={handleRegister} className="card-body">
@@ -87,10 +94,14 @@ const handleRegister = e =>{
 
 
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button className="btn bg-pink-400">Register</button>
         </div>
       </form>
     </div>
+  </div>
+
+  <div className="w-[500px]">
+   <img  className="h-[500px]" src="https://www.kayak.co.in/news/wp-content/uploads/sites/76/2023/08/THEME_HOTEL_SIGN_FIVE_STARS_FACADE_BUILDING_GettyImages-1320779330-3.jpg" alt="" />
   </div>
 </div>
         </div>
