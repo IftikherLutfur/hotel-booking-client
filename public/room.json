@@ -1,0 +1,108 @@
+[
+    {
+      "room_description": "Standard Single Room",
+      "price_per_night": 80,
+      "room_size": "20 sqm",
+      "availability": "Available",
+      "image": "https://lh5.googleusercontent.com/proxy/GE3b0DXLoXep0H9XsSqRHVansXeOWeJ1WnxfHjtPOBeI3P1cOSf0oxqhMBUKlA2dKQIWkCzFBSnfVxYOx9GdJ0nFo6F5CxGntkmHupwVk8xOb01isYBbZARPh_U_6xMCPoSB85cjPkwk0YDmit96CH9njvawD5jdQw"
+    },
+    {
+      "room_description": "Deluxe Double Room",
+      "price_per_night": 120,
+      "room_size": "30 sqm",
+      "availability": "Available",
+      "image": "https://lh3.googleusercontent.com/proxy/gqlhT2bFdkSz-5SQAAvYyvzo526uLlZsfqIYtl9bgY2Ys7xGP0yTm0YJKzPKlEubu4zWnKQb1kiPTMynMkuRDCvz1Oxua_OTc0M__w-EGYpwqURtNeVdUMQoQYYK1sp9Tg"
+    },
+    {
+      "room_description": "Executive Suite",
+      "price_per_night": 200,
+      "room_size": "50 sqm",
+      "availability": "Available",
+      "image": "https://cdn.marriottnetwork.com/uploads/sites/23/2022/10/Executive-Suite-Living-and-Dining-Rooms-5091-788x650.jpg"
+    },
+    {
+      "room_description": "Family Room",
+      "price_per_night": 150,
+      "room_size": "40 sqm",
+      "availability": "Available",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/family-room-ideas-hbx0613000a-1611614336.jpg"
+    },
+    {
+      "room_description": "Luxury Penthouse",
+      "price_per_night": 500,
+      "room_size": "100 sqm",
+      "availability": "Available",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6dFq5RY6OvgSYm9POYiOHvU9Xxl-8V0clhGLRjvq2lA&s"
+    },
+    {
+      "room_description": "Ocean View Villa",
+      "price_per_night": 700,
+      "room_size": "120 sqm",
+      "availability": "Available",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/69/60/12/ocean-view-villa-uluwatu.jpg?w=1200&h=-1&s=1"
+    },
+    {
+      "room_description": "Honeymoon Suite",
+      "price_per_night": 300,
+      "room_size": "60 sqm",
+      "availability": "Available",
+      "image": "https://www.swisswoodhotel.com/wp-content/uploads/2019/10/Honeymoon-decor-pic5.jpg"
+    },
+    {
+      "room_description": "Budget Single Room",
+      "price_per_night": 50,
+      "room_size": "15 sqm",
+      "availability": "Available",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/414103373.jpg?k=b83d6daed119ab695f86074a6a26335b3d7080e29f746b4a426f6a8b599690b9&o=&hp=1"
+    },
+    {
+      "room_description": "Economy Double Room",
+      "price_per_night": 90,
+      "room_size": "25 sqm",
+      "availability": "Available",
+      "image": "image17.jpg"
+    },
+    {
+      "room_description": "Premium Suite",
+      "price_per_night": 400,
+      "room_size": "70 sqm",
+      "availability": "Available",
+      "image": "https://www.barutarum.com/images/arum/arum-barut-collection/rooms/premium-suite/arum-rooms-premium-suite-04.jpg"
+    },
+    {
+      "room_description": "Garden View Room",
+      "price_per_night": 180,
+      "room_size": "35 sqm",
+      "availability": "Available",
+      "image": "https://sandpiperbarbados.com/wp-content/uploads/SP-168_SandP_GardenView_1440x960.jpg"
+    },
+    {
+      "room_description": "Business Class Suite",
+      "price_per_night": 250,
+      "room_size": "55 sqm",
+      "availability": "Available",
+      "image": "https://sixseasonshotel.com/wp-content/uploads/2023/11/business_class_room-3-768x512.jpg"
+    },
+    {
+      "room_description": "Standard Twin Room",
+      "price_per_night": 110,
+      "room_size": "28 sqm",
+      "availability": "Available",
+      "image": "https://1079465213.rsc.cdn77.org/media/2058/mercure-london-hyde-park-standard-twin-room-2.jpg?anchor=center&mode=crop&width=1170&height=780&rnd=133016646540000000"
+    },
+    {
+      "room_description": "Mountain View Chalet",
+      "price_per_night": 600,
+      "room_size": "90 sqm",
+      "availability": "Available",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-H51uNXC4CJ4orw2EO4vqe9htCwtrW7A3EnWYd_XzjQ&s"
+    },
+    {
+      "room_description": "Vintage Suite",
+      "price_per_night": 350,
+      "room_size": "65 sqm",
+      "availability": "Available",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr0ekniyhhaRc_159W652U9rHM9Fl8Ux7_HoB-9c1Wlg&s"
+    }
+  ]
+  

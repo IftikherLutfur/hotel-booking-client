@@ -5,6 +5,7 @@ import Root from "./Root";
 import Home from "./Home/Home";
 import Register from "./Authentication/Register";
 import Login from "./Authentication/Login";
+import Book from "./Components/Book/Book";
 
   const router = createBrowserRouter([
     {
@@ -22,6 +23,11 @@ import Login from "./Authentication/Login";
         {
             path:'/login',
             element:<Login></Login>
+        },
+        {
+            path:'/room',
+            element:<Book></Book>,
+            loader: ()=> fetch('http://localhost:5000/room')
         }
       ]
     },
