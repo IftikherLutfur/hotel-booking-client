@@ -12,7 +12,8 @@ import Home from "./Home/Home";
         {
             path:'/',
             element:<Home></Home>
-        }
+        },
+    
       ]
     },
   ]);

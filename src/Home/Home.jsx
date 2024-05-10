@@ -1,3 +1,5 @@
+import GoogleMap from "./GoogleMap";
+
 const Home = () => {
     return (
         <div>
@@ -24,6 +26,7 @@ const Home = () => {
 	</div>
 </section>
 
+<GoogleMap></GoogleMap>
         </div>
     );
 };
