@@ -4,14 +4,19 @@
       "price_per_night": 80,
       "room_size": "20 sqm",
       "availability": "Available",
-      "image": "https://lh5.googleusercontent.com/proxy/GE3b0DXLoXep0H9XsSqRHVansXeOWeJ1WnxfHjtPOBeI3P1cOSf0oxqhMBUKlA2dKQIWkCzFBSnfVxYOx9GdJ0nFo6F5CxGntkmHupwVk8xOb01isYBbZARPh_U_6xMCPoSB85cjPkwk0YDmit96CH9njvawD5jdQw"
+      "image": "https://www.hotel-dubrovnik.hr/wp-content/uploads/2018/12/Hotel-Dubrovnik-Zagreb-standard-single-room1-min.jpg",
+      "description": "Our Standard Single Room offers a cozy retreat for solo travelers. With a comfortable single bed and modern amenities, this room is perfect for those seeking a comfortable stay without the frills. The room features a spacious ensuite bathroom, a work desk, and complimentary Wi-Fi. Enjoy a restful night's sleep on the plush mattress after a day of exploring the city. Wake up refreshed and start your day with a delicious breakfast served in our onsite restaurant. Whether you're traveling for business or leisure, our Standard Single Room provides everything you need for a pleasant stay."
+   
     },
+
     {
       "room_description": "Deluxe Double Room",
       "price_per_night": 120,
       "room_size": "30 sqm",
       "availability": "Available",
       "image": "https://lh3.googleusercontent.com/proxy/gqlhT2bFdkSz-5SQAAvYyvzo526uLlZsfqIYtl9bgY2Ys7xGP0yTm0YJKzPKlEubu4zWnKQb1kiPTMynMkuRDCvz1Oxua_OTc0M__w-EGYpwqURtNeVdUMQoQYYK1sp9Tg"
+      ,"description": "Indulge in luxury with our Deluxe Double Room, designed for discerning travelers seeking extra comfort. Featuring a spacious layout and elegant decor, this room offers a serene haven for couples or solo travelers looking for a touch of extravagance. Sink into the plush king-size bed and enjoy a restful night's sleep. The room also includes a stylish seating area, a well-appointed ensuite bathroom with a bathtub, and a private balcony overlooking the city skyline. Wake up refreshed and start your day with a freshly brewed cup of coffee from the in-room coffee machine. Whether you're here for business or leisure, our Deluxe Double Room provides the perfect blend of comfort and sophistication."
+    
     },
     {
       "room_description": "Executive Suite",
@@ -19,6 +24,8 @@
       "room_size": "50 sqm",
       "availability": "Available",
       "image": "https://cdn.marriottnetwork.com/uploads/sites/23/2022/10/Executive-Suite-Living-and-Dining-Rooms-5091-788x650.jpg"
+      ,"description": "Experience unparalleled luxury in our Executive Suite, designed for the most discerning guests. Spread out and relax in this expansive suite, featuring a separate bedroom, living area, and dining space. The bedroom boasts a luxurious king-size bed with premium linens, ensuring a restful night's sleep. The spacious living area is ideal for entertaining guests or unwinding after a long day of sightseeing. Indulge in the ultimate pampering experience in the ensuite bathroom, complete with a deep soaking tub and separate rainfall shower. Take in panoramic views of the city skyline from the private balcony, or unwind with a movie on the flat-screen TV. Whether you're traveling for business or leisure, our Executive Suite offers the perfect blend of comfort and sophistication."
+   
     },
     {
       "room_description": "Family Room",
@@ -26,13 +33,17 @@
       "room_size": "40 sqm",
       "availability": "Available",
       "image": "https://hips.hearstapps.com/hmg-prod/images/family-room-ideas-hbx0613000a-1611614336.jpg"
+      ,"description": "Our Family Room is the ideal choice for families or groups traveling together. With ample space and thoughtful amenities, this room ensures a comfortable stay for all guests. The room features a combination of bedding options, including a king-size bed and twin beds, providing flexibility for families of all sizes. Relax and unwind in the spacious living area, perfect for quality time with your loved ones. The ensuite bathroom offers convenience and privacy, with modern fixtures and complimentary toiletries. Start your day with a delicious breakfast served in our onsite restaurant before heading out to explore the city. Whether you're here for a family vacation or a group getaway, our Family Room provides the perfect blend of comfort and convenience." 
     },
+
     {
       "room_description": "Luxury Penthouse",
       "price_per_night": 500,
       "room_size": "100 sqm",
       "availability": "Available",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6dFq5RY6OvgSYm9POYiOHvU9Xxl-8V0clhGLRjvq2lA&s"
+      ,"description": "Elevate your stay with our Luxury Penthouse, a lavish retreat for the most discerning guests. Perched atop our hotel, this exquisite penthouse offers unrivaled views of the city skyline. Step inside and discover a world of luxury, with designer furnishings and opulent decor. The spacious living area is perfect for entertaining guests, with a grand piano and a cozy fireplace. The master bedroom features a king-size bed with plush bedding, ensuring a restful night's sleep. Indulge in the ultimate pampering experience in the ensuite bathroom, complete with a Jacuzzi tub and a separate rainfall shower. Step out onto the private terrace and take in breathtaking views of the surrounding landscape. Whether you're celebrating a special occasion or simply indulging in a luxurious getaway, our Luxury Penthouse offers the epitome of elegance and sophistication."
+    
     },
     {
       "room_description": "Ocean View Villa",
@@ -40,6 +51,8 @@
       "room_size": "120 sqm",
       "availability": "Available",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/69/60/12/ocean-view-villa-uluwatu.jpg?w=1200&h=-1&s=1"
+      , "description": "Experience the height of luxury in our Ocean View Villa, a secluded oasis overlooking the azure waters of the ocean. Nestled amidst lush tropical gardens, this spacious villa offers unparalleled privacy and tranquility. Step inside and discover a world of indulgence, with elegant furnishings and bespoke decor. The expansive living area is perfect for relaxing with loved ones, with floor-to-ceiling windows offering panoramic views of the ocean. The master bedroom features a sumptuous king-size bed with luxury linens, ensuring a restful night's sleep. Indulge in the ultimate pampering experience in the ensuite bathroom, complete with a deep soaking tub and a rainfall shower. Step outside onto the private terrace and take a refreshing dip in your own private infinity pool. Whether you're seeking a romantic retreat or a family getaway, our Ocean View Villa offers the perfect blend of luxury and seclusion."
+    
     },
     {
       "room_description": "Honeymoon Suite",
@@ -47,6 +60,8 @@
       "room_size": "60 sqm",
       "availability": "Available",
       "image": "https://www.swisswoodhotel.com/wp-content/uploads/2019/10/Honeymoon-decor-pic5.jpg"
+      ,"description": "Celebrate your love in our Honeymoon Suite, a romantic retreat designed for couples seeking the ultimate indulgence. Nestled amidst lush tropical gardens, this secluded suite offers unrivaled privacy and tranquility. Step inside and discover a world of romance, with elegant furnishings and luxurious amenities. The spacious living area is perfect for intimate moments, with a cozy fireplace and plush seating. The master bedroom features a sumptuous king-size bed with luxury linens, ensuring a restful night's sleep. Indulge in the ultimate pampering experience in the ensuite bathroom, complete with a Jacuzzi tub and a rainfall shower. Step outside onto the private terrace and take in breathtaking views of the surrounding landscape. Whether you're celebrating your honeymoon or simply seeking a romantic escape, our Honeymoon Suite offers the perfect blend of luxury and romance."
+    
     },
     {
       "room_description": "Budget Single Room",
@@ -54,6 +69,8 @@
       "room_size": "15 sqm",
       "availability": "Available",
       "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/414103373.jpg?k=b83d6daed119ab695f86074a6a26335b3d7080e29f746b4a426f6a8b599690b9&o=&hp=1"
+      ,"description": "Traveling on a budget? Our Budget Single Room is the perfect choice for solo travelers seeking affordable accommodation without sacrificing comfort. Compact yet cozy, this room offers everything you need for a comfortable stay. The room features a comfortable single bed, a work desk, and a private ensuite bathroom. Stay connected with complimentary Wi-Fi access, and enjoy a restful night's sleep on the plush mattress. Start your day with a complimentary continental breakfast served in our onsite restaurant. Whether you're here for business or leisure, our Budget Single Room provides great value for money without compromising on quality."
+    
     },
     {
       "room_description": "Economy Double Room",
@@ -61,6 +78,8 @@
       "room_size": "25 sqm",
       "availability": "Available",
       "image": "image17.jpg"
+      ,"description": "Our Economy Double Room offers comfortable accommodation at an affordable price. Perfect for couples or solo travelers on a budget, this room provides everything you need for a pleasant stay. The room features a cozy double bed, a work desk, and a private ensuite bathroom. Relax and unwind after a day of exploring the city, and enjoy a restful night's sleep on the comfortable mattress. Start your day with a complimentary continental breakfast served in our onsite restaurant. Whether you're here for business or leisure, our Economy Double Room offers great value for money without compromising on comfort."
+
     },
     {
       "room_description": "Premium Suite",
@@ -68,6 +87,8 @@
       "room_size": "70 sqm",
       "availability": "Available",
       "image": "https://www.barutarum.com/images/arum/arum-barut-collection/rooms/premium-suite/arum-rooms-premium-suite-04.jpg"
+      ,"description": "Indulge in luxury with our Premium Suite, a spacious retreat designed for discerning travelers seeking the ultimate indulgence. Step inside and discover a world of elegance, with stylish furnishings and luxurious amenities. The expansive living area is perfect for entertaining guests or unwinding after a long day of sightseeing. The master bedroom features a sumptuous king-size bed with luxury linens, ensuring a restful night's sleep. Indulge in the ultimate pampering experience in the ensuite bathroom, complete with a deep soaking tub and a rainfall shower. Step outside onto the private terrace and take in breathtaking views of the surrounding landscape. Whether you're here for business or leisure, our Premium Suite offers the perfect blend of comfort and sophistication."
+    
     },
     {
       "room_description": "Garden View Room",
@@ -75,6 +96,8 @@
       "room_size": "35 sqm",
       "availability": "Available",
       "image": "https://sandpiperbarbados.com/wp-content/uploads/SP-168_SandP_GardenView_1440x960.jpg"
+      ,"description": "Escape to our Garden View Room and discover a tranquil retreat amidst lush tropical gardens. Perfect for nature lovers and outdoor enthusiasts, this room offers breathtaking views of the surrounding landscape. Step inside and discover a world of comfort, with stylish furnishings and modern amenities. The spacious living area is perfect for relaxing with a book or enjoying a cup of coffee. The ensuite bathroom features a rainfall shower and complimentary toiletries, ensuring a refreshing start to your day. Step outside onto the private terrace and take in the sights and sounds of the garden. Whether you're here for a romantic getaway or a peaceful retreat, our Garden View Room offers the perfect blend of comfort and serenity."
+
     },
     {
       "room_description": "Business Class Suite",
@@ -82,6 +105,8 @@
       "room_size": "55 sqm",
       "availability": "Available",
       "image": "https://sixseasonshotel.com/wp-content/uploads/2023/11/business_class_room-3-768x512.jpg"
+      ,"description": "Experience the height of luxury in our Business Class Suite, designed for the modern traveler seeking comfort and convenience. Step inside and discover a world of elegance, with stylish furnishings and luxurious amenities. The spacious living area is perfect for catching up on work or unwinding after a long day of meetings. The master bedroom features a sumptuous king-size bed with premium linens, ensuring a restful night's sleep. Indulge in the ultimate pampering experience in the ensuite bathroom, complete with a deep soaking tub and a rainfall shower. Start your day with a complimentary continental breakfast served in our onsite restaurant. Whether you're here for business or leisure, our Business Class Suite offers the perfect blend of comfort and sophistication."
+
     },
     {
       "room_description": "Standard Twin Room",
@@ -89,6 +114,8 @@
       "room_size": "28 sqm",
       "availability": "Available",
       "image": "https://1079465213.rsc.cdn77.org/media/2058/mercure-london-hyde-park-standard-twin-room-2.jpg?anchor=center&mode=crop&width=1170&height=780&rnd=133016646540000000"
+      ,"description": "Our Standard Twin Room offers comfortable accommodation for two guests traveling together. Perfect for friends or colleagues, this room provides everything you need for a pleasant stay. The room features two comfortable single beds, a work desk, and a private ensuite bathroom. Stay connected with complimentary Wi-Fi access, and enjoy a restful night's sleep on the plush mattresses. Start your day with a complimentary continental breakfast served in our onsite restaurant. Whether you're here for business or leisure, our Standard Twin Room provides great value for money without compromising on quality."
+    
     },
     {
       "room_description": "Mountain View Chalet",
@@ -96,6 +123,8 @@
       "room_size": "90 sqm",
       "availability": "Available",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-H51uNXC4CJ4orw2EO4vqe9htCwtrW7A3EnWYd_XzjQ&s"
+      ,"description": "Escape to our Mountain View Chalet and immerse yourself in the beauty of nature. Nestled amidst towering peaks and pristine forests, this secluded chalet offers unparalleled tranquility and serenity. Step inside and discover a world of rustic charm, with cozy furnishings and warm wood accents. The spacious living area is perfect for gathering with friends or family, with a roaring fireplace and breathtaking views of the surrounding landscape. The master bedroom features a sumptuous king-size bed with plush bedding, ensuring a restful night's sleep. Indulge in the ultimate pampering experience in the ensuite bathroom, complete with a deep soaking tub and a rainfall shower. Step outside onto the private terrace and take in panoramic views of the mountains. Whether you're here for a romantic getaway or a family vacation, our Mountain View Chalet offers the perfect blend of comfort and adventure."
+    
     },
     {
       "room_description": "Vintage Suite",
@@ -103,6 +132,131 @@
       "room_size": "65 sqm",
       "availability": "Available",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr0ekniyhhaRc_159W652U9rHM9Fl8Ux7_HoB-9c1Wlg&s"
-    }
+      ,"description": "Step back in time and experience the charm of yesteryear in our Vintage Suite, a nostalgic retreat for guests seeking a unique and memorable stay. Nestled within a historic building, this suite exudes old-world elegance and sophistication. Step inside and discover a world of vintage charm, with period furnishings and antique decor. The spacious living area is perfect for relaxing with a glass of wine or hosting intimate gatherings. The master bedroom features a sumptuous king-size bed with luxury linens, ensuring a restful night's sleep. Indulge in the ultimate pampering experience in the ensuite bathroom, complete with a clawfoot tub and vintage fixtures. Step outside onto the private terrace and take in views of the surrounding historic district. Whether you're here for a romantic getaway or a nostalgic retreat, our Vintage Suite offers a truly unforgettable experience."
+    
+    },
+   
+      {
+        "room_description": "Cozy Loft",
+        "price_per_night": 180,
+        "room_size": "40 sqm",
+        "availability": "Available",
+        "image": "https://i.ytimg.com/vi/Y8Oh4W8_E18/maxresdefault.jpg",
+        "description": "Experience loft living at its finest in our Cozy Loft room. This unique accommodation combines modern style with industrial chic, creating a warm and inviting atmosphere. Step inside and be greeted by exposed brick walls, high ceilings, and large windows that flood the space with natural light. The open-plan layout features a comfortable living area with a plush sofa, a dining table for two, and a fully equipped kitchenette. Climb the stairs to the cozy sleeping loft, where you'll find a queen-size bed with luxurious linens. The ensuite bathroom boasts a walk-in shower and contemporary fixtures. Whether you're here for work or leisure, our Cozy Loft offers the perfect blend of comfort and style for your stay."
+      },
+      {
+        "room_description": "Riverside Cottage",
+        "price_per_night": 250,
+        "room_size": "60 sqm",
+        "availability": "Available",
+        "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/224153901.jpg?k=85cc8fae044ff9a5ab0da5a7ecb6ce2707be8c7a456a38c07f5c11574b21ee49&o=&hp=1",
+        "description": "Escape to our Riverside Cottage and experience the beauty of nature from your doorstep. Nestled along the banks of a picturesque river, this charming cottage offers a tranquil retreat away from the hustle and bustle of city life. Step inside and be greeted by rustic charm and modern amenities. The spacious living area features a cozy fireplace, comfortable seating, and breathtaking views of the surrounding landscape. The fully equipped kitchen allows you to prepare your own meals, or you can dine al fresco on the private patio overlooking the river. The master bedroom boasts a plush king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom features a deep soaking tub and separate shower. Whether you're here for a romantic getaway or a peaceful retreat, our Riverside Cottage offers the perfect blend of comfort and serenity."
+      },
+      {
+        "room_description": "Safari Tent",
+        "price_per_night": 120,
+        "room_size": "30 sqm",
+        "availability": "Available",
+        "image": "https://nightskyglamping.b-cdn.net/images/1000x750/safari-tent/kithen-dining-2.jpg",
+        "description": "Embark on a wild adventure with a stay in our Safari Tent, a luxurious retreat in the heart of nature. Nestled amidst lush greenery, this tented accommodation offers a unique blend of comfort and adventure. Step inside and discover a world of luxury, with stylish furnishings and modern amenities. The spacious tent features a comfortable king-size bed, a seating area, and a private ensuite bathroom with a hot shower. Relax on your private deck and take in views of the surrounding wilderness. In the evening, gather around the campfire for a traditional safari experience under the stars. Whether you're here for a romantic getaway or a family adventure, our Safari Tent offers the perfect blend of luxury and excitement."
+      },
+      {
+        "room_description": "Treehouse Retreat",
+        "price_per_night": 300,
+        "room_size": "50 sqm",
+        "availability": "Available",
+        "image": "https://www.usnews.com/object/image/00000164-3857-d22e-a1ef-fd7fb0480000/10-playa-viva-juluchuca-mexico-submitted.jpg?update-time=1682085020912&size=responsive640",
+        "description": "Experience the magic of the forest with a stay in our Treehouse Retreat, a whimsical accommodation nestled high among the trees. Step inside and be transported to a world of enchantment, with rustic charm and modern amenities. The spacious treehouse features a cozy living area, a dining nook, and a fully equipped kitchenette. Climb the stairs to the sleeping loft, where you'll find a plush queen-size bed with luxurious linens. The ensuite bathroom boasts a walk-in shower and contemporary fixtures. Step outside onto the private deck and take in panoramic views of the surrounding forest. Whether you're here for a romantic getaway or a family adventure, our Treehouse Retreat offers the perfect blend of comfort and seclusion."
+      },
+      {
+        "room_description": "Beachfront Bungalow",
+        "price_per_night": 400,
+        "room_size": "70 sqm",
+        "availability": "Available",
+        "image": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/82/2023/12/18163526/NPQ-Room-Deluxe-beachfront-3-3.jpg",
+        "description": "Experience barefoot luxury with a stay in our Beachfront Bungalow, a tropical retreat just steps away from the pristine sands and turquoise waters of the ocean. Nestled amidst swaying palms and lush gardens, this secluded bungalow offers unrivaled privacy and tranquility. Step inside and discover a world of rustic elegance, with warm wood accents and contemporary furnishings. The spacious living area is perfect for relaxing with a book or enjoying panoramic views of the ocean. The master bedroom features a sumptuous king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom boasts a walk-in shower and luxurious amenities. Step outside onto the private deck and take in breathtaking views of the sunrise over the ocean. Whether you're here for a romantic getaway or a family vacation, our Beachfront Bungalow offers the perfect blend of comfort and natural beauty."
+      },
+      {
+        "room_description": "Mountain Retreat",
+        "price_per_night": 350,
+        "room_size": "60 sqm",
+        "availability": "Available",
+        "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/380506451.jpg?k=2da022efe418751704e554c2cfb4f684062f09e77dc141ed93d65b845bcd82d1&o=&hp=1",
+        "description": "Escape to our Mountain Retreat and experience the beauty of the great outdoors from the comfort of your own private cabin. Nestled amidst towering peaks and pristine forests, this secluded retreat offers unrivaled privacy and tranquility. Step inside and be greeted by rustic charm and modern amenities. The spacious living area features a cozy fireplace, comfortable seating, and breathtaking views of the surrounding landscape. The fully equipped kitchen allows you to prepare your own meals, or you can dine al fresco on the private patio overlooking the mountains. The master bedroom boasts a plush king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom features a deep soaking tub and separate shower. Whether you're here for a romantic getaway or a family vacation, our Mountain Retreat offers the perfect blend of comfort and adventure."
+      },
+      {
+        "room_description": "Lakeview Cabin",
+        "price_per_night": 280,
+        "room_size": "50 sqm",
+        "availability": "Available",
+        "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/383150363.jpg?k=8119550048ee251b2d409ebc2f1fa955e11a3c5312e1c561431220c0f6e5a725&o=&hp=1",
+        "description": "Escape to our Lakeview Cabin and experience the beauty of the great outdoors from the comfort of your own private retreat. Nestled along the shores of a tranquil lake, this charming cabin offers unrivaled views and serenity. Step inside and be greeted by rustic charm and modern amenities. The spacious living area features a cozy fireplace, comfortable seating, and breathtaking views of the lake. The fully equipped kitchen allows you to prepare your own meals, or you can dine al fresco on the private deck overlooking the water. The master bedroom boasts a plush king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom features a deep soaking tub and separate shower. Whether you're here for a romantic getaway or a family vacation, our Lakeview Cabin offers the perfect blend of comfort and natural beauty."
+      },
+      {
+        "room_description": "Desert Oasis",
+        "price_per_night": 200,
+        "room_size": "40 sqm",
+        "availability": "Available",
+        "image": "https://s3.us-west-2.amazonaws.com/modsy/rimg/tr_92ef3163-2cf6-465d-95bc-9d7107a3f62f_645634_1_elsie_userview_3.jpg",
+        "description": "Experience the allure of the desert with a stay in our Desert Oasis, a luxurious retreat amidst the sand dunes. Nestled amidst golden sands and swaying palms, this secluded oasis offers unrivaled privacy and tranquility. Step inside and discover a world of rustic elegance, with warm earth tones and contemporary furnishings. The spacious living area is perfect for relaxing with a book or enjoying panoramic views of the desert. The master bedroom features a sumptuous king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom boasts a walk-in shower and luxurious amenities. Step outside onto the private terrace and take in breathtaking views of the sunset over the desert. Whether you're here for a romantic getaway or a family vacation, our Desert Oasis offers the perfect blend of comfort and adventure."
+      },
+      {
+        "room_description": "Urban Loft",
+        "price_per_night": 220,
+        "room_size": "45 sqm",
+        "availability": "Available",
+        "image": "https://andersondesignstudio.com/wp-content/uploads/2017/11/URBAN-MASTER-BED-1.jpg",
+        "description": "Experience loft living in the heart of the city with a stay in our Urban Loft. Nestled amidst the bustling streets and vibrant nightlife, this stylish accommodation offers the perfect blend of comfort and convenience. Step inside and be greeted by modern design and sleek furnishings. The open-plan layout features a comfortable living area, a dining table for two, and a fully equipped kitchenette. The sleeping area boasts a plush queen-size bed with luxurious linens, ensuring a restful night's sleep. The ensuite bathroom features a walk-in shower and contemporary fixtures. Whether you're here for work or leisure, our Urban Loft offers the perfect home base for exploring the city."
+      },
+      {
+        "room_description": "Tropical Villa",
+        "price_per_night": 500,
+        "room_size": "80 sqm",
+        "availability": "Available",
+        "image": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/111913095.jpg?k=9073ee5a40b2dd4e001a289ae60e15ee500c0912c83e0c95c228ee409f9211ca&o=",
+        "description": "Escape to paradise with a stay in our Tropical Villa, a luxurious retreat set amidst lush gardens and swaying palms. Step inside and be transported to a world of elegance and tranquility. The spacious villa features a stylish living area, a dining room, and a fully equipped kitchen. The master bedroom boasts a sumptuous king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom features a deep soaking tub and separate shower. Step outside onto the private terrace and take in panoramic views of the surrounding landscape. Whether you're here for a romantic getaway or a family vacation, our Tropical Villa offers the perfect blend of comfort and natural beauty."
+      },
+      {
+        "room_description": "Alpine Chalet",
+        "price_per_night": 380,
+        "room_size": "70 sqm",
+        "availability": "Available",
+        "image": "https://www.ovonetwork.com/blog/wp-content/uploads/2023/07/1685-Victorina-220621-EL-summ13-RJ-scaled.jpg",
+        "description": "Escape to our Alpine Chalet and experience the beauty of the mountains from the comfort of your own private retreat. Nestled amidst snow-capped peaks and pristine forests, this charming chalet offers unrivaled views and serenity. Step inside and be greeted by rustic charm and modern amenities. The spacious living area features a cozy fireplace, comfortable seating, and breathtaking views of the surrounding landscape. The fully equipped kitchen allows you to prepare your own meals, or you can dine al fresco on the private patio overlooking the mountains. The master bedroom boasts a plush king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom features a deep soaking tub and separate shower. Whether you're here for a romantic getaway or a family vacation, our Alpine Chalet offers the perfect blend of comfort and adventure."
+      },
+      {
+        "room_description": "Countryside Cottage",
+        "price_per_night": 280,
+        "room_size": "60 sqm",
+        "availability": "Available",
+        "image": "https://i.pinimg.com/originals/d0/cd/14/d0cd14fdea855c521eb149ed96911f44.png",
+        "description": "Escape to the countryside with a stay in our charming Cottage, a tranquil retreat nestled amidst rolling hills and picturesque meadows. Step inside and be greeted by rustic charm and modern amenities. The spacious living area features a cozy fireplace, comfortable seating, and breathtaking views of the surrounding landscape. The fully equipped kitchen allows you to prepare your own meals, or you can dine al fresco on the private patio overlooking the countryside. The master bedroom boasts a plush king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom features a deep soaking tub and separate shower. Whether you're here for a romantic getaway or a family vacation, our Countryside Cottage offers the perfect blend of comfort and serenity."
+      },
+      {
+        "room_description": "Seaside Villa",
+        "price_per_night": 450,
+        "room_size": "80 sqm",
+        "availability": "Available",
+        "image": "https://www.behr.com/colorfullybehr/wp-content/uploads/2021/04/DIGITALLOFT_BEHR_BEDROOM_001_4.jpg",
+        "description": "Experience the ultimate beach retreat with a stay in our Seaside Villa, a luxurious accommodation set along the pristine shores of the ocean. Step inside and be greeted by modern design and elegant furnishings. The spacious villa features a stylish living area, a dining room, and a fully equipped kitchen. The master bedroom boasts a sumptuous king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom features a deep soaking tub and separate shower. Step outside onto the private terrace and take in panoramic views of the ocean. Whether you're here for a romantic getaway or a family vacation, our Seaside Villa offers the perfect blend of comfort and natural beauty."
+      },
+        {
+          "room_description": "Historic Mansion Suite",
+          "price_per_night": 600,
+          "room_size": "100 sqm",
+          "availability": "Available",
+          "image": "https://q-xx.bstatic.com/xdata/images/hotel/max500/180074322.jpg?k=723099dc123b099ced948c3d8dcca3feb8f7b8b5787257cab2ef765f4260f8d9&o=",
+          "description": "Step back in time with a stay in our Historic Mansion Suite, a luxurious retreat within a meticulously restored historic mansion. Nestled amidst lush gardens and grand architecture, this suite offers a glimpse into the opulent lifestyle of the past. Step inside and be transported to a world of elegance and sophistication. The spacious living area features antique furnishings, ornate decorations, and breathtaking views of the surrounding estate. The master bedroom boasts a sumptuous king-size bed with luxurious linens, ensuring a restful night's sleep. The ensuite bathroom features a foot tub, marble accents, and premium amenities. Step outside onto the private terrace and take in views of the manicured gardens and sweeping lawns. Whether you're here for a romantic getaway or a special occasion, our Historic Mansion Suite offers a truly unforgettable experience."
+        },
+        {
+          "room_description": "Luxury Yacht Cabin",
+          "price_per_night": 800,
+          "room_size": "80 sqm",
+          "availability": "Available",
+          "image": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/18/2018/10/95-Y-Owners_State_Detail.jpg",
+          "description": "Embark on a voyage of luxury with a stay in our Luxury Yacht Cabin, a floating retreat on the open seas. Step aboard and be greeted by sleek design, modern amenities, and panoramic views of the ocean. The spacious cabin features a comfortable living area, a dining nook, and a fully equipped kitchen. The master bedroom boasts a sumptuous king-size bed with luxury linens, ensuring a restful night's sleep. The ensuite bathroom features a rainfall shower, marble accents, and premium amenities. Step outside onto the private deck and take in views of the endless horizon and azure waters. Whether you're here for a romantic cruise or a special celebration, our Luxury Yacht Cabin offers the ultimate in maritime luxury and adventure."
+        }
+      
+    
   ]
   

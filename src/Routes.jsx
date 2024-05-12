@@ -7,11 +7,13 @@ import Register from "./Authentication/Register";
 import Login from "./Authentication/Login";
 import Book from "./Components/Book/Book";
 import BookDetails from "./Components/Book/BookDetails";
+import Error from "./Home/Error";
 
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
+      errorElement:<Error></Error>,
       children: [
         {
             path:'/',
@@ -34,7 +36,12 @@ import BookDetails from "./Components/Book/BookDetails";
             path:'/room/:id',
             element:<BookDetails></BookDetails>,
             loader:()=>fetch('http://localhost:5000/room')
-        }
+        },
+        // {
+        //   path:'/confirm/:id',
+        //   element:<ConfirmBook></ConfirmBook>,
+        //   loader:()=>fetch('http://localhost:5000/room')
+        // }
       ]
     },
   ]);
