@@ -3,6 +3,7 @@ import {useLoaderData, useParams } from "react-router-dom";
 import { MdCancel } from "react-icons/md";
 import { useContext } from "react";
 import { AuthContext } from "../../Authentication/AuthProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 const BookDetails = () => {
     
@@ -20,16 +21,7 @@ const BookDetails = () => {
             const {data} = await axios.patch(`http://localhost:5000/rooms/${id}`,
               {availability}
           )
-          console.log(data);        
-              if(data.modifiedCount>0){
-               alert("updated")
-              }
-              }
-              else{
-                alert("already booked")
-              }
-
-        }
+          console.log(data)}}
 
        
         const handleConfirm = e => {
@@ -50,6 +42,9 @@ const BookDetails = () => {
                     .then(res=>res.json())
                     .then(data=>{
                      console.log(data);
+                     if(data.insertedId){
+                        toast.success("Successfully Booked")
+                     }
                     })
            
     
@@ -100,12 +95,14 @@ const BookDetails = () => {
 
         <div className=" mt-3 item-center">
             <h1 className="text-lg font-bold text-gray-700 dark:text-gray-200 md:text-xl">Price: {"$"+ card.price_per_night}</h1>
-            <h1 className="text-lg font-bold text-gray-700 dark:text-gray-200 md:text-xl">Room Sze: {card.room_size}</h1>
+            <h1 className="text-lg font-bold text-gray-700 dark:text-gray-200 md:text-xl">Room Size: {card.room_size}</h1>
 
 
 
-<label htmlFor="my_modal_6" className={card.availability==='unavailable'? 'hidden' : "btn w-full bg-pink-400"}>Order</label>
 
+{
+    card.availability === "Available" ?<label htmlFor="my_modal_6" className={`btn w-full bg-pink-400`}>Order</label>  :""
+}
 {/* Put this part before </body> tag */}
 <input type="checkbox" id="my_modal_6" className="modal-toggle" />
 
@@ -116,9 +113,8 @@ const BookDetails = () => {
 
 
         <form onSubmit={handleConfirm} method="dialog">
-      <h1 className="text-4xl font-bold text-center my-5 text-black">Fill up the form </h1>
 
-<p className="text-center font-bol text-xl">And Confirm Your Order</p>
+<p className="text-center font-bol text-xl">Confirm Your Order</p>
 
 <div className="grid grid-cols-2 w-full gap-3 mb-3">
 
@@ -171,7 +167,12 @@ const BookDetails = () => {
             className="input input-bordered" required />
     </div>
       
+     <div>
      <button onClick={()=> showAMessage(card._id, card.availability, "Unavailable")} className="btn bg-pink-400 w-full" >Confirm</button>
+              
+              </div>
+              
+              <Toaster />
 
 </div>
 {/* <button className="btn">Close</button> */}

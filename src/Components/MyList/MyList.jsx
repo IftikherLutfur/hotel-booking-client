@@ -8,12 +8,31 @@ import Paper from '@mui/material/Paper';
 import { useLoaderData } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../Authentication/AuthProvider';
+import { FaEdit } from "react-icons/fa";
+import { MdDeleteForever } from "react-icons/md";
+import toast, { Toaster } from 'react-hot-toast';
+
+
 
 
 const MyList = () => {
 
 
     const {user} = useContext(AuthContext)
+const handleDelete = id =>{
+  console.log(id);
+  fetch(`http://localhost:5000/post/${id}`,{
+    method:"DELETE"
+  })
+  .then(res=>res.json())
+  .then(data=>{console.log(data)
+    if(data.deletedCount>0){
+      toast.success('Successfully Deleted!')
+  
+    }
+
+  })
+}
 
 const data = useLoaderData()
 console.log(data);
@@ -46,9 +65,16 @@ console.log(data2);
               </TableCell>
               <TableCell align="right">{'$' + row.price_per_night}</TableCell>
               <TableCell align="right">{row.date}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              <TableCell align="right"><button><FaEdit></FaEdit></button></TableCell>
+              <TableCell align="right">
+              <div>
+              <button onClick={()=>handleDelete(row._id)}><MdDeleteForever></MdDeleteForever></button>
+              </div></TableCell>
+              
+              <Toaster />
+       
             </TableRow>
+             
           ))}
         </TableBody>
       </Table>
