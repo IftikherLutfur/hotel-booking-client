@@ -25,14 +25,17 @@ const Navbar = () => {
 		</a>
 		<ul className="items-center hidden space-x-3 lg:flex">
 		<li className="flex">
-		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex font-bold"><em>Home</em></a></NavLink>
+		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex"><em>Home</em></a></NavLink>
 		</li>
 		<li className="flex">
-		<NavLink to='/room'><a rel="noopener noreferrer" href="#" className="flex font-bold"><em>Room</em></a></NavLink>
+		<NavLink to='/room'><a rel="noopener noreferrer" href="#" className="flex"><em>Room</em></a></NavLink>
 		</li>
 		<li className="flex">
-		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex font-bold"><em>Home</em></a></NavLink>
+		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex"><em>Home</em></a></NavLink>
 		</li>
+		{user && <li className="flex">
+		<NavLink to='/list'><a rel="noopener noreferrer" href="#" className="flex"><em>My List</em></a></NavLink>
+		</li>}
 		</ul>
 
        {user ? <div className="dropdown dropdown-end">

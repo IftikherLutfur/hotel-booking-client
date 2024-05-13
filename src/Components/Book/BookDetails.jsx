@@ -1,13 +1,18 @@
 import axios from "axios";
 import {useLoaderData, useParams } from "react-router-dom";
+import { MdCancel } from "react-icons/md";
+import { useContext } from "react";
+import { AuthContext } from "../../Authentication/AuthProvider";
 
 const BookDetails = () => {
-
+    
+    const {user} = useContext(AuthContext);
     const loaders = useLoaderData();
     console.log(loaders);
     const { id } = useParams();
     const card = loaders.find(loader => loader._id === id)
     console.log(card);
+    const {price_per_night} = card;
 
 
     const showAMessage = async (id, prevStatus, availability) =>{
@@ -35,7 +40,7 @@ const BookDetails = () => {
             const date = form.get('date')
             const name = form.get('name')
             const email = form.get('email')
-            const order = {item, date, name, email}
+            const order = {item, date, name, email,price_per_night}
             console.log(order);
              fetch('http://localhost:5000/post',{
                 method:"POST",
@@ -97,20 +102,18 @@ const BookDetails = () => {
             <h1 className="text-lg font-bold text-gray-700 dark:text-gray-200 md:text-xl">Price: {"$"+ card.price_per_night}</h1>
             <h1 className="text-lg font-bold text-gray-700 dark:text-gray-200 md:text-xl">Room Sze: {card.room_size}</h1>
 
-     {/* <button onClick={()=>showAMessage(card._id,card.availability, "unavailable")} 
-     disabled={card.availability === "complete"}
-     className="px-2 mt-3 btn w-full bg-pink-600  rounded
-     focus:outline-none dark:focus:bg-green-600 text-white">Book Now</button> */}
 
-{/* The button to open modal */}
 
-<label htmlFor="my_modal_6" className={card.availability? 'btn w-full bg-pink-400' : "hidden"}>Order</label>
+<label htmlFor="my_modal_6" className={card.availability==='unavailable'? 'hidden' : "btn w-full bg-pink-400"}>Order</label>
 
 {/* Put this part before </body> tag */}
 <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+
 <div className="modal" role="dialog">
   <div className="modal-box">
     <div className="modal-action">
+    <label htmlFor="my_modal_6" className="btn absolute"><MdCancel></MdCancel></label>
+
 
         <form onSubmit={handleConfirm} method="dialog">
       <h1 className="text-4xl font-bold text-center my-5 text-black">Fill up the form </h1>
@@ -127,7 +130,7 @@ const BookDetails = () => {
         <input
             type="text"
             name="item"
-            
+            defaultValue={card.room_description}
             placeholder="Enter your email"
             className="input input-bordered" required />
     </div>
@@ -152,7 +155,7 @@ const BookDetails = () => {
         <input
             type="text"
             name="name"
-           
+           defaultValue={user.displayName}
             className="input input-bordered" required />
     </div>
 
@@ -164,14 +167,14 @@ const BookDetails = () => {
         <input
             type="email"
             name="email"
-        
+            defaultValue={user.email}
             className="input input-bordered" required />
     </div>
+      
+     <button onClick={()=> showAMessage(card._id, card.availability, "Unavailable")} className="btn bg-pink-400 w-full" >Confirm</button>
 
 </div>
 {/* <button className="btn">Close</button> */}
-      
-     <button onClick={()=> showAMessage(card._id, card.availability, "Unavailable")} > <label htmlFor="my_modal_6" className="btn">Confirm</label></button>
       </form>
 
 

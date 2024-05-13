@@ -1,5 +1,8 @@
+import Facilites from "../Components/Facilities/Facilites";
+import Slider from "../Components/Slider/Slider";
 import Featured from "./Featured";
 import GoogleMap from "./GoogleMap";
+import HomeBook from "./HomeBook";
 
 const Home = () => {
     return (
@@ -27,8 +30,11 @@ const Home = () => {
 	</div>
 </section>
 
-<GoogleMap></GoogleMap>
+<Slider></Slider>       
 <Featured></Featured>
+<HomeBook></HomeBook>
+<Facilites></Facilites>
+<GoogleMap></GoogleMap>
         </div>
     );
 };

@@ -8,6 +8,8 @@ import Login from "./Authentication/Login";
 import Book from "./Components/Book/Book";
 import BookDetails from "./Components/Book/BookDetails";
 import Error from "./Home/Error";
+import MyList from "./Components/MyList/MyList";
+import PrivateRoutes from "./Authentication/PrivateRoutes";
 
   const router = createBrowserRouter([
     {
@@ -34,9 +36,14 @@ import Error from "./Home/Error";
         },
         {
             path:'/room/:id',
-            element:<BookDetails></BookDetails>,
+            element:<PrivateRoutes><BookDetails></BookDetails></PrivateRoutes>,
             loader:()=>fetch('http://localhost:5000/room')
         },
+        {
+          path:'/list',
+          element:<PrivateRoutes><MyList></MyList></PrivateRoutes>,
+          loader: ()=>fetch('http://localhost:5000/post')
+        }
         // {
         //   path:'/confirm/:id',
         //   element:<ConfirmBook></ConfirmBook>,
