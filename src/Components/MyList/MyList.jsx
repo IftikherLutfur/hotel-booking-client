@@ -13,12 +13,16 @@ import { MdDeleteForever } from "react-icons/md";
 import toast, { Toaster } from 'react-hot-toast';
 
 
-
-
 const MyList = () => {
 
 
     const {user} = useContext(AuthContext)
+    const data = useLoaderData()
+console.log(data);
+
+const data2 = data.filter(dt=>dt.email === user.email)
+console.log(data2);
+
 const handleDelete = id =>{
   console.log(id);
   fetch(`http://localhost:5000/post/${id}`,{
@@ -28,17 +32,26 @@ const handleDelete = id =>{
   .then(data=>{console.log(data)
     if(data.deletedCount>0){
       toast.success('Successfully Deleted!')
-  
     }
 
   })
 }
 
-const data = useLoaderData()
-console.log(data);
-
-const data2 = data.filter(dt=>dt.email === user.email)
-console.log(data2);
+const handleUpdate = e =>{
+  e.preventDefault()
+  const form = new FormData(e.currentTarget)
+  const date = form.get('date')
+  console.log(date);
+ fetch(`http://localhost:5000/post/${data2._id}`,
+  {
+    method:"PUT",
+    headers:{'content-type': "application/json"},
+    body: JSON.stringify(data)
+  }
+ )
+ .then(res=>res.json())
+ .then(data=>{console.log(data)})
+}
 
 
     return (
@@ -65,7 +78,29 @@ console.log(data2);
               </TableCell>
               <TableCell align="right">{'$' + row.price_per_night}</TableCell>
               <TableCell align="right">{row.date}</TableCell>
-              <TableCell align="right"><button><FaEdit></FaEdit></button></TableCell>
+              <TableCell align="right">
+                {/* The button to open modal */}
+<button><a href="#my_modal_8" ><FaEdit></FaEdit></a></button>
+{/* Put this part before </body> tag */}
+<div className="modal" role="dialog" id="my_modal_8">
+  <div className="modal-box">
+   <form onSubmit={handleUpdate}>
+   <div className="form-control">
+          <label className="label">
+    <span>update date</span>
+          </label>
+
+          <input 
+          type="date" 
+          name="date"
+          className="input input-bordered" required />
+        </div>
+    <div className="modal-action">
+ <button>Update</button>
+    </div>
+   </form>
+  </div>
+</div></TableCell>
               <TableCell align="right">
               <div>
               <button onClick={()=>handleDelete(row._id)}><MdDeleteForever></MdDeleteForever></button>

@@ -4,6 +4,8 @@ import { MdCancel } from "react-icons/md";
 import { useContext } from "react";
 import { AuthContext } from "../../Authentication/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
+import SeeReview from "../SeeReview";
+import Review from "../Review/Review";
 
 const BookDetails = () => {
     
@@ -26,7 +28,7 @@ const BookDetails = () => {
        
         const handleConfirm = e => {
             console.log(e);
-            e.preventDefault()
+            // e.preventDefault()
             const form = new FormData(e.currentTarget)
             const item = form.get('item')
             const date = form.get('date')
@@ -53,12 +55,12 @@ const BookDetails = () => {
 
 
     return (
-        <div className="mx-10  overflow-hidden rounded-lg shadow-lg bg-sky-700 my-5">
+        <div className="bg-gray-200">
 
 
     
        
-            <div className="flex">
+            <div className="flex mx-10  overflow-hidden rounded-lg shadow-lg bg-sky-700 my-5">
                 <div className="flex-1">
                     <img className="w-full h-full" src={card.image} alt="" />
                 </div>           
@@ -190,8 +192,8 @@ const BookDetails = () => {
             </div>
 
 
-
-
+<SeeReview></SeeReview>
+<Review></Review>
 
         </div>
 
