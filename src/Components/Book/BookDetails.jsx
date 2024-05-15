@@ -5,17 +5,17 @@ import { useContext } from "react";
 import { AuthContext } from "../../Authentication/AuthProvider";
 import toast, { Toaster } from "react-hot-toast";
 import SeeReview from "../SeeReview";
-import Review from "../Review/Review";
 
 const BookDetails = () => {
     
     const {user} = useContext(AuthContext);
+    const {displayName, photoURL, email, price_per_night} =user;
     const loaders = useLoaderData();
     console.log(loaders);
     const { id } = useParams();
     const card = loaders.find(loader => loader._id === id)
     console.log(card);
-    const {price_per_night} = card;
+    const { room_description} = card;
 
 
     const showAMessage = async (id, prevStatus, availability) =>{
@@ -34,7 +34,7 @@ const BookDetails = () => {
             const date = form.get('date')
             const name = form.get('name')
             const email = form.get('email')
-            const order = {item, date, name, email,price_per_night}
+            const order = {item, date, name, email, price_per_night}
             console.log(order);
              fetch('http://localhost:5000/post',{
                 method:"POST",
@@ -52,6 +52,22 @@ const BookDetails = () => {
     
         }
 
+        const handleReview = e => {
+            e.preventDefault()
+            const form = new FormData(e.currentTarget)
+            const review = form.get("review")
+            const dataForPost = {review,room_description,displayName, photoURL} 
+            console.log(dataForPost);
+         
+            fetch('http://localhost:5000/feedback', {
+                method: "POST",
+                headers: { "content-type": "application/json" },
+                body: JSON.stringify(dataForPost)
+            })
+                .then(res => res.json())
+                .then(data => { console.log(data) })
+    
+        }
 
 
     return (
@@ -71,29 +87,9 @@ const BookDetails = () => {
          <p className="mt-4 text-sm  text-white">
         {card.description}</p> 
 
-        <p>{card.availability}</p>
+        <p className="text-white mt-5">Availability: <span className={card.availability === "Available" ? " text-green-400 font-bold text-2xl": "text-red-300 text-2xl font-bold"}>{card.availability}</span></p>
 
-                 <div className="flex mt-2 item-center ml-60">
-            <svg className="w-5 h-5 text-gray-700 fill-current dark:text-gray-300" viewBox="0 0 24 24">
-                <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-            </svg>
-
-            <svg className="w-5 h-5 text-gray-700 fill-current dark:text-gray-300" viewBox="0 0 24 24">
-                <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-            </svg>
-
-            <svg className="w-5 h-5 text-gray-700 fill-current dark:text-gray-300" viewBox="0 0 24 24">
-                <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-            </svg>
-
-            <svg className="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
-                <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-            </svg>
-
-            <svg className="w-5 h-5 text-gray-500 fill-current" viewBox="0 0 24 24">
-                <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-            </svg>
-        </div>
+       
 
         <div className=" mt-3 item-center">
             <h1 className="text-lg font-bold text-gray-700 dark:text-gray-200 md:text-xl">Price: {"$"+ card.price_per_night}</h1>
@@ -153,7 +149,7 @@ const BookDetails = () => {
         <input
             type="text"
             name="name"
-           defaultValue={user.displayName}
+           defaultValue={displayName}
             className="input input-bordered" required />
     </div>
 
@@ -165,7 +161,7 @@ const BookDetails = () => {
         <input
             type="email"
             name="email"
-            defaultValue={user.email}
+            defaultValue={email}
             className="input input-bordered" required />
     </div>
       
@@ -191,9 +187,36 @@ const BookDetails = () => {
     
             </div>
 
+            {/* seeReview */}
 
-<SeeReview></SeeReview>
-<Review></Review>
+            <SeeReview></SeeReview>
+
+
+{/* review */}
+
+{card.availability === "Available" ?"": <div className="">
+				<div className="flex flex-col items-center w-full">
+					<h2 className="text-3xl font-semibold text-center mb-3">How was your experience?</h2>
+					<form onSubmit={handleReview}>
+						<div className="flex px-3">
+							<div>
+								<input
+									type="text"
+									name="review"
+									className="p-4 w-96 rounded-md border-2 resize-none dark:text-gray-800 dark:bg-gray-50" />
+							</div>
+							<div className="text-center ">
+								<button className="p-4 font-semibold dark:text-gray-50 bg-pink-400 rounded-xl ">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div className="flex items-center justify-center">
+					<a rel="noopener noreferrer" href="#" className="text-sm dark:text-gray-600">Maybe later</a>
+				</div>
+			</div> }
+
+            {/* end of the review */}
 
         </div>
 

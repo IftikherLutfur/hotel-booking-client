@@ -1,7 +1,17 @@
+import { useEffect, useState } from "react";
 
 const SeeReview = () => {
 
-    
+    const [review, setReview] = useState([])
+	useEffect(()=>{
+		fetch('http://localhost:5000/room')
+		.then(res=>res.json())
+		.then(data=>{
+			setReview(data);
+		})
+	},[])
+
+	console.log(review);
 
 
 

@@ -4,12 +4,13 @@ const Review = () => {
 		e.preventDefault()
 		const form = new FormData(e.currentTarget)
 		const review = form.get("review")
-		console.log(review);
-
-		fetch('http://localhost:5000/review', {
+		const dataForPost = {review, } 
+		console.log(dataForPost);
+     
+		fetch('http://localhost:5000/post', {
 			method: "POST",
 			headers: { "content-type": "application/json" },
-			body: JSON.stringify(review)
+			body: JSON.stringify(dataForPost)
 		})
 			.then(res => res.json())
 			.then(data => { console.log(data) })
