@@ -20,7 +20,7 @@ const BookDetails = () => {
 
     const showAMessage = async (id, prevStatus, availability) => {
         if (card.availability) {
-            const { data } = await axios.patch(`https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/rooms/${id}`,
+            const { data } = await axios.patch(`https://hotel-booking-server-beta.vercel.app/rooms/${id}`,
                 { availability }
             )
             console.log(data)
@@ -38,7 +38,7 @@ const BookDetails = () => {
         const email = form.get('email')
         const order = { item, date, name, email, price_per_night }
         console.log(order);
-        fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/post', {
+        fetch('https://hotel-booking-server-beta.vercel.app/post', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(order)

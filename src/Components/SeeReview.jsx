@@ -5,7 +5,7 @@ const SeeReview = () => {
 	const [review, setReview] = useState([])
 	const [specificReview, setSpecificReview] = useState([])
 	useEffect(() => {
-		fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/post')
+		fetch('https://hotel-booking-server-beta.vercel.app/post')
 			.then(res => res.json())
 			.then(data => {
 				setReview(data);
@@ -13,7 +13,7 @@ const SeeReview = () => {
 	}, [])
 
 	useEffect(() => {
-		fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/feedback')
+		fetch('https://hotel-booking-server-beta.vercel.app/feedback')
 			.then(res => res.json())
 			.then(data => {
 				setSpecificReview(data)

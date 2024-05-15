@@ -22,7 +22,7 @@ const MyList = () => {
     const dataForPost = { review, room_description, displayName, photoURL, email }
     console.log(dataForPost);
 
-    fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/feedback', {
+    fetch('https://hotel-booking-server-beta.vercel.app/feedback', {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(dataForPost)
@@ -41,7 +41,7 @@ console.log(data2);
 
 const handleDelete = id =>{
   console.log(id);
-  fetch(`https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/post/${id}`,{
+  fetch(`https://hotel-booking-server-beta.vercel.app/post/${id}`,{
     method:"DELETE"
   })
   .then(res=>res.json())
@@ -54,15 +54,15 @@ const handleDelete = id =>{
 }
 
 const handleUpdate = e =>{
-  // e.preventDefault()
+  e.preventDefault()
   const form = new FormData(e.currentTarget)
   const date = form.get('date')
   console.log(date);
- fetch(`https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/post/${data2.id}`,
+ fetch(`https://hotel-booking-server-beta.vercel.app/post/${user.email}`,
   {
     method:"PUT",
     headers:{'content-type': "application/json"},
-    body: JSON.stringify(data)
+    body: JSON.stringify(date)
   }
  )
  .then(res=>res.json())
@@ -101,32 +101,23 @@ const handleUpdate = e =>{
 {/* update section */}
 
               <TableCell align="right">
-                {/* The button to open modal */}
-{/* You can open the modal using document.getElementById('ID').showModal() method */}
-{/* <button className="" onClick={()=>document.getElementById('my_modal_3').showModal()}><FaEdit></FaEdit></button> */}
-{/* <dialog id="my_modal_3" className="modal">
+              <a  href="#my_modal_8" className="pl-10"><FaEdit></FaEdit></a>
+{/* Put this part before </body> tag */}
+<div className="modal l" role="dialog" id="my_modal_8">
   <div className="modal-box">
-    <form method="dialog">
-      {/* if there is a button in form, it will close the modal */}
-      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-    {/* </form> */}
-     {/* <form onSubmit={handleUpdate}>
-   <div className="form-control">
-          <label className="label">
-    <span>update date</span>
-          </label>
-
-          <input 
-          type="date" 
-          name="date"
-          className="input input-bordered" required />
-        </div>
+  <form onSubmit={handleUpdate}>
+    <input type="date"
+    name='date'
+    className='border-2 w-full'
+    />
+   
+    <button className='w-full btn bg-pink-400'>update</button>
+   </form>
     <div className="modal-action">
- <button onClick={()=> handleUpdate(row._id)} >Update</button>
+     <a href="#" className="">Close</a>
     </div>
-   </form> */}
-  {/* </div> */}
-{/* </dialog> */}
+  </div>
+</div>
 </TableCell>
 
 

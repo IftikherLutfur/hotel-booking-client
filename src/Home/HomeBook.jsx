@@ -6,7 +6,7 @@ const HomeBook = () => {
     const [rooms, setRoom] = useState([]);
 
     useEffect(()=>{
-        fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/room')
+        fetch('https://hotel-booking-server-beta.vercel.app/room')
         .then(res=>res.json())
         .then(data=>{
             setRoom(data)
@@ -15,7 +15,7 @@ const HomeBook = () => {
 
     const handleDetails = id =>{
         console.log(id);
-        fetch(`https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/room/${id}`)
+        fetch(`https://hotel-booking-server-beta.vercel.app/room/${id}`)
         .then(res=>res.json())
         .then(data=>console.log(data))
     }

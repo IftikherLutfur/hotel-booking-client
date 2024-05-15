@@ -27,7 +27,7 @@
 //         const order = {item, date, name, email}
 //         console.log(order);
 
-//         fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/post',{
+//         fetch('https://hotel-booking-server-beta.vercel.app/post',{
 //    method:"POST",
 //    headers:{"content-type":"application/json"},
 //    body:JSON.stringify(order)
@@ -42,7 +42,7 @@
 
 
 //     const showAMessage = async (id, prevStatus, availability) =>{
-//         const {data} = await axios.patch(`https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/rooms/${id}`,
+//         const {data} = await axios.patch(`https://hotel-booking-server-beta.vercel.app/rooms/${id}`,
 //           {availability}
 //       )
 //       console.log(data);        

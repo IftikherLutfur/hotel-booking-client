@@ -33,7 +33,7 @@ const Home = () => {
 </section>
 
       
-<Featured></Featured>
+<Featured></Featured>   
 <HomeBook></HomeBook>
 <Facilites></Facilites>
 <GoogleMap></GoogleMap>

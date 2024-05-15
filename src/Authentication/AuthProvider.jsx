@@ -57,7 +57,7 @@ const AuthProvider = ({ children }) => {
       setLoading(false)
 
       if(currentUser){
-        axios.post('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/jwt', loggedUser,
+        axios.post('https://hotel-booking-server-beta.vercel.app/jwt', loggedUser,
             {withCredentials: true})
             .then(res => {
                 console.log('Token Response' ,res.data);
@@ -65,7 +65,7 @@ const AuthProvider = ({ children }) => {
     }
 
     else{
-        axios.post('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/logout',
+        axios.post('https://hotel-booking-server-beta.vercel.app/logout',
             loggedUser, {
                 withCredentials: true
             })

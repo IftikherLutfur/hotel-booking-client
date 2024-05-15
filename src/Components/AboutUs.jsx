@@ -24,7 +24,7 @@ const AboutUs = () => {
 
                 <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Live Chat</h2>
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Speak to our friendly team.</p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">grandBLU@merakiui.com</p>
+                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">grandHotel2016@gmail.com</p>
             </div>
 
             <div className="p-4 rounded-lg bg-blue-50 md:p-6 dark:bg-gray-800">

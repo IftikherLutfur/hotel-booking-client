@@ -7,7 +7,7 @@ const Book = () => {
 
     const handleDetails = id =>{
         console.log(id);
-        fetch(`https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/room/${id}`)
+        fetch(`https://hotel-booking-server-beta.vercel.app/room/${id}`)
         .then(res=>res.json())
         .then(data=>console.log(data))
     }

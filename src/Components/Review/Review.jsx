@@ -7,7 +7,7 @@ const Review = () => {
 		const dataForPost = {review, } 
 		console.log(dataForPost);
      
-		fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/post', {
+		fetch('https://hotel-booking-server-beta.vercel.app/post', {
 			method: "POST",
 			headers: { "content-type": "application/json" },
 			body: JSON.stringify(dataForPost)
