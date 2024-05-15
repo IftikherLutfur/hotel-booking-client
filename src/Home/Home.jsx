@@ -1,4 +1,7 @@
 import Facilites from "../Components/Facilities/Facilites";
+import Food from "../Components/Food/Food";
+import NewCastler from "../Components/NewCastler/NewCastler";
+import SeeReview from "../Components/SeeReview";
 import Featured from "./Featured";
 import GoogleMap from "./GoogleMap";
 import HomeBook from "./HomeBook";
@@ -34,6 +37,9 @@ const Home = () => {
 <HomeBook></HomeBook>
 <Facilites></Facilites>
 <GoogleMap></GoogleMap>
+<Food></Food>
+<SeeReview></SeeReview>
+<NewCastler></NewCastler>
         </div>
     );
 };

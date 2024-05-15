@@ -25,16 +25,16 @@ const Navbar = () => {
 		</a>
 		<ul className="items-center hidden space-x-3 lg:flex">
 		<li className="flex">
-		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex"><em>Home</em></a></NavLink>
+		<NavLink className={({isActive}) => isActive? "text-pink-400" : ""} to='/'><a rel="noopener noreferrer" href="#" className="flex">Home</a></NavLink>
 		</li>
 		<li className="flex">
-		<NavLink to='/room'><a rel="noopener noreferrer" href="#" className="flex"><em>Room</em></a></NavLink>
+		<NavLink className={({isActive}) => isActive? "text-pink-400" : ""} to='/room'><a rel="noopener noreferrer" href="#" className="flex">Room</a></NavLink>
 		</li>
 		<li className="flex">
-		<NavLink to='/'><a rel="noopener noreferrer" href="#" className="flex"><em>Home</em></a></NavLink>
+		<NavLink className={({isActive}) => isActive? "text-pink-400" : ""}  to='/about'><button rel="noopener noreferrer" href="#"  >Contact Us</button></NavLink>
 		</li>
 		{user && <li className="flex">
-		<NavLink to='/list'><a rel="noopener noreferrer" href="#" className="flex"><em>My List</em></a></NavLink>
+		<NavLink className={({isActive}) => isActive? "text-pink-400" : ""} to='/list'><a rel="noopener noreferrer" href="#" className="flex">My List</a></NavLink>
 		</li>}
 		</ul>
 

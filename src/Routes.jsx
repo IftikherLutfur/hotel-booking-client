@@ -10,6 +10,8 @@ import BookDetails from "./Components/Book/BookDetails";
 import Error from "./Home/Error";
 import MyList from "./Components/MyList/MyList";
 import PrivateRoutes from "./Authentication/PrivateRoutes";
+import AboutUs from "./Components/AboutUs";
+
 
   const router = createBrowserRouter([
     {
@@ -32,22 +34,26 @@ import PrivateRoutes from "./Authentication/PrivateRoutes";
         {
             path:'/room',
             element:<Book></Book>,
-            loader: ()=> fetch('http://localhost:5000/room')
+            loader: ()=> fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/room')
         },
         {
             path:'/room/:id',
             element:<PrivateRoutes><BookDetails></BookDetails></PrivateRoutes>,
-            loader:()=>fetch('http://localhost:5000/room')
+            loader:()=>fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/room')
         },
         {
           path:'/list',
           element:<PrivateRoutes><MyList></MyList></PrivateRoutes>,
-          loader: ()=>fetch('http://localhost:5000/post')
+          loader: ()=>fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/post')
+        },
+        {
+          path:'/about',
+          element:<AboutUs></AboutUs>
         }
         // {
         //   path:'/confirm/:id',
         //   element:<ConfirmBook></ConfirmBook>,
-        //   loader:()=>fetch('http://localhost:5000/room')
+        //   loader:()=>fetch('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/room')
         // }
       ]
     },

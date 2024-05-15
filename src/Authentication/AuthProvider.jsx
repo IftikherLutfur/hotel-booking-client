@@ -57,7 +57,7 @@ const AuthProvider = ({ children }) => {
       setLoading(false)
 
       if(currentUser){
-        axios.post('http://localhost:5000/jwt', loggedUser,
+        axios.post('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/jwt', loggedUser,
             {withCredentials: true})
             .then(res => {
                 console.log('Token Response' ,res.data);
@@ -65,7 +65,7 @@ const AuthProvider = ({ children }) => {
     }
 
     else{
-        axios.post('http://localhost:5000/logout',
+        axios.post('https://hotel-booking-server-iftikher-lutfur-abdullahs-projects.vercel.app/logout',
             loggedUser, {
                 withCredentials: true
             })
