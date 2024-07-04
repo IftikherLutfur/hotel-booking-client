@@ -21,7 +21,7 @@
 3.Setup Firebase
 4.Set up Mongodb
 
-## Live Link : hotel-booking-service-250b8.web.app
+## Live Link : https://hotel-booking-service-250b8.web.app/
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
